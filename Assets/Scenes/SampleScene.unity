@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 376302243}
-  distance: 5
+  offset: {x: 0, y: 0, z: -10}
 --- !u!1 &376302243
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,6 +307,7 @@ MonoBehaviour:
   tunnel: {fileID: 919132148696210142}
   rotspeed: 30
   movementSpeed: 15
+  gravityMultiplier: 2
 --- !u!65 &376302245
 BoxCollider:
   m_ObjectHideFlags: 0
