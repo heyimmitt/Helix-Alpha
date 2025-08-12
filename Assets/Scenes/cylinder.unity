@@ -608,7 +608,8 @@ GameObject:
   - component: {fileID: 376302246}
   - component: {fileID: 376302245}
   - component: {fileID: 376302249}
-  - component: {fileID: 376302244}
+  - component: {fileID: 376302251}
+  - component: {fileID: 376302250}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -616,26 +617,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &376302244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376302243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a365d9bdf7252284c8cf788e6b676c03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tunnel: {fileID: 919132148696210142}
-  rotspeed: 90
-  movementSpeed: 15
-  gravityMultiplier: 8
-  WinScreen: {fileID: 843778727}
-  DeathScreen: {fileID: 683786872}
-  scoreMessage: {fileID: 1663317099}
-  scoreMultiplier: 1
 --- !u!65 &376302245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -753,6 +734,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 50
   m_CollisionDetection: 1
+--- !u!114 &376302250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376302243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a8e25093626654cbaf603f3271d3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinScreen: {fileID: 843778727}
+  DeathScreen: {fileID: 683786872}
+  scoreMessage: {fileID: 1663317099}
+  scoreMultiplier: 1
+--- !u!114 &376302251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376302243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597fabc0d63092f48b3ec97937051478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 10
+  gravityMultiplier: 8
 --- !u!1 &393697761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,7 +2103,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 233, y: 511}
+  m_AnchoredPosition: {x: 150, y: 511}
   m_SizeDelta: {x: 1082, y: 557}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663317099
@@ -2142,8 +2153,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3476,6 +3487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652951281764}
+  - component: {fileID: 919132148696210143}
   m_Layer: 0
   m_Name: tunnel
   m_TagString: Untagged
@@ -3483,6 +3495,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132148696210143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148696210142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d0b31469edfa9408c0454f50b9bd55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotspeed: 90
 --- !u!4 &1151388027636371852
 Transform:
   m_ObjectHideFlags: 0
