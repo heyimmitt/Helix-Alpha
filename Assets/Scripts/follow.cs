@@ -5,6 +5,7 @@ public class follow : MonoBehaviour
     public GameObject target;
     // public float distance = 5f;
     public Vector3 offset;
+    public float yFollowConst = 0.3f;
     private GameObject obj;
     void Start()
     {
@@ -18,6 +19,6 @@ public class follow : MonoBehaviour
         {
             return;
         }
-        obj.transform.position = new Vector3(obj.transform.position.x + offset.x, obj.transform.position.y, target.transform.position.z + offset.z);
+        obj.transform.position = new Vector3(obj.transform.position.x + offset.x, target.transform.position.y * yFollowConst, target.transform.position.z + offset.z);
     }
 }

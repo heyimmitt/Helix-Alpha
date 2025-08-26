@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class collision : MonoBehaviour
 {
+
+    public ParticleSystem  ps;
     public GameObject WinScreen;
     public GameObject DeathScreen;
     public TMP_Text scoreMessage;
@@ -28,14 +30,14 @@ public class collision : MonoBehaviour
         {
             DeathScreen.SetActive(true);
             Destroy(this.gameObject);
-            SceneManager.LoadScene(0);
+            ps.Play();
 
         }
         else if (collision.gameObject.CompareTag("EndBlock"))
         {
             WinScreen.SetActive(true);
             Destroy(this.gameObject);
-            SceneManager.LoadScene(0);
+            ps.Play();
         }
     }
 
