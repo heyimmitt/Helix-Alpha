@@ -9,7 +9,7 @@ public class follow : MonoBehaviour
     private GameObject obj;
     void Start()
     {
-        obj = this.gameObject;
+
     }
 
     // Update is called once per frame

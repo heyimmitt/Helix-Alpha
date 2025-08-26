@@ -24,7 +24,7 @@ public class collision : MonoBehaviour
         scoreMessage.text = "Score: " + ComputeScore();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         if (collision.gameObject.CompareTag("KillBlock"))
         {

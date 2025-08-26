@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour
     }
 
     // This will be called when the player collides with another collider
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         if (collision.gameObject.CompareTag("KillBlock"))
         {
